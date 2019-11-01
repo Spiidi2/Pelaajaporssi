@@ -8,9 +8,11 @@
     <body>
        
         <form th:action="@{/form}" method="post" th:object ="${user}">
-            <div><label> Käyttäjätunnus : <input type="text" name="username"/> </label></div>
-           
-            <div><input type="submit" value="Login" th:field = "${user.username}"/></div>
+           <h2>Tervetuloa Pelaajapörssiin! </h2>
+           <h3>Seuraavalta sivulta ilmoittautuminen pelaaja/joukkue hakuun.  </h3>
+            <div><label> Käyttäjätunnus(ei pakollinen) : <input type="text" name="username"/> </label></div>
+           	</br>
+            <div><input type="submit" value="Ilmoittautumiseen" th:field = "${user.username}"/></div>
         </form>
       
     </body>

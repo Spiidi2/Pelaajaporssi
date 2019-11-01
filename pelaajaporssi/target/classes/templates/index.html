@@ -14,12 +14,13 @@
 	
       <form th:action="@{/submit}" method="post" th:object ="${message}">
           <div>
-           Viesti : <input type="text" textarea placeholder="Nimi, pkunta, puh, ikä" name="message" th:field = "${message.messagetext}"/>
+         <p>  Pelaajatiedot/Joukkuetiedot :</p>
+         <input type="text" textarea placeholder="Nimi,kunta,puh,ikä/pvm" name="message" th:field = "${message.messagetext}"/>
           </div>
           
-          
+          </br>
           <div>
-          <input type="submit" value="Lähetä" /></div>
+          <input type="submit" value="Ilmoita tietosi" /></div>
      </form>
   		<div th:each="message: ${allMessages}">
       	<p th:text="${message.messagetext}" />

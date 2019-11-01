@@ -17,7 +17,31 @@ body{
    
   }
  
+   h2{
+    height: $size/2;
+    line-height: $size/2;
+    font-size: 50px;
+    border-bottom: 2px solid $bg;
+    color: #ea2231;
+   
+  }
+     h3{
+    height: $size/2;
+    line-height: $size/2;
+    font-size: 25px;
+    border-bottom: 2px solid $bg;
+    color: #ea2231;
+   
+  }
 
+      p{
+  
+   
+    font-size: 20px;
+    border-bottom: 2px solid $bg;
+    color: #120260;
+   
+  }
  
 
 .bloc{
