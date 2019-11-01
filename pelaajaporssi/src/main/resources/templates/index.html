@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<title></title>
+</head>
+<body>
+
+    <h1>Pelaajapörssi</h1>
+    <p th:text="${username}"></p>
+
+    
+	
+      <form th:action="@{/submit}" method="post" th:object ="${message}">
+          <div>
+           Viesti : <input type="text" textarea placeholder="Nimi, pkunta, puh, ikä" name="message" th:field = "${message.messagetext}"/>
+          </div>
+          
+          
+          <div>
+          <input type="submit" value="Lähetä" /></div>
+     </form>
+  		<div th:each="message: ${allMessages}">
+      	<p th:text="${message.messagetext}" />
+
+</div>
+
+
+
+
+</body>
+</html>
